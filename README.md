@@ -43,7 +43,7 @@ Add to `package.json` a script to lint your desired files:
 ```
 
 ## Rules
-Please refer to [AirBnB's Styleguide](https://github.com/airbnb/javascript) for more information about the linter's
+Please refer to [AirBnB's Styleguide](https://github.com/airbnb/javascript) or [Prettier's](https://github.com/prettier/eslint-config-prettier) for more information about the linter's
 rules.
 
 ### Custom rules
