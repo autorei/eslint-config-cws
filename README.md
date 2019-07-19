@@ -31,16 +31,41 @@ Create an `.eslintrc.json` file at the root of your project and add the followin
 }
 ```
 
-### 3. Extra configuration
-Add to `package.json` a script to lint your desired files:
+## 3. Prettier
+Since this config is also based on [prettier eslint](https://github.com/prettier/eslint-config-prettier), it is correct to say that you want to use it in your proejct.
+
+### 3.1. Prettier installation
+
+ Install (prettier)[https://prettier.io] in your project
+```bash
+npm install --save-dev prettier
+```
+
+### 3.2. Prettier settings
+Create an `.prettier.json` file at the root of your project and add the following configuration:
+
+```json
+{
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "printWidth": 100,
+  "jsxBracketSameLine": false
+}
+```
+
+### 3.3. Prettier npm script
+Add to package.json a script to lint your desired files:
 
 ```json
 {
     "scripts": {
-        "lint": "eslint js/*.js"
+        "prettier": "prettier --config ./.prettierrc.json --write \"src/**/*{.js,.jsx,.css}\""
     }
 }
 ```
+
 
 ## Rules
 Please refer to [AirBnB's Styleguide](https://github.com/airbnb/javascript) or [Prettier's](https://github.com/prettier/eslint-config-prettier) for more information about the linter's
