@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-cws",
+  "version": "0.0.1",
+  "description": "CWS's ESlint configuration",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autorei/eslint-config-cws.git"
+  },
+  "author": "cws.digital",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/autorei/eslint-config-cws/issues"
+  },
+  "homepage": "https://github.com/autorei/eslint-config-cws#readme",
+  "dependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.6.1"
+  }
+}
