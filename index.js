@@ -1,16 +1,11 @@
 module.exports = {
-  extends: [ 'airbnb', 'prettier' ],
+  extends: ['eslint-config-airbnb-base', 'eslint-config-prettier' ],
   rules: {
     'semi': 0,
-    'max-len': ['error', { 'code': 100 }],
-    'prfer-promise-reject-erroers': ['off'],
-    'react/jsx-filename-extension': ['off'],
-    'react/prop-types': ['warn'],
-    'no-return-assign': ['off']
+    'max-len': ['error', {
+      'code': 100,
+      'ignoreStrings': true,
+      'ignoreTemplateLiterals': true,
+    }],
   },
-  parser: 'babel-eslint',
-  plugins: [
-    'react',
-    'react-hooks',
-  ],
 };
