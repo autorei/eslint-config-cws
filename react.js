@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint-config-airbnb', 'eslint-config-cws'],
+  extends: ['eslint-config-airbnb', 'eslint-config-cws', 'eslint-config-prettier/react'],
   rules: {
     'react/jsx-filename-extension': ['off'],
     'react/prop-types': ['warn'],
