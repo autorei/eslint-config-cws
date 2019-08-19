@@ -77,6 +77,8 @@ rules.
 | setup | rule | setting |
 |-------|------|---------|
 | all | max-len | 100 characters {ignoreStrings: true, ignoreTemplateLiterals: true} |
+| all | semi | never |
+| all | quotes | single { allowTemplateLiterals: true } |
 | react | react/jsx-filename-extension | off |
 | react | react/prop-types | warn |
 | react | jsx-a11y/href-no-hash | off |
